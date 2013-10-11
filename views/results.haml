@@ -1,0 +1,13 @@
+%html
+  %head
+    %script{src: "/javascripts/jquery.min.js"}
+    %script{src: "/javascripts/masonry.min.js"}
+    %script{src: "/javascripts/imagesloaded.min.js"}
+    %script{src: "/javascripts/main.js"}
+    %link{rel: "stylesheet", href: "/css/style.css"}
+
+  %body
+    #container
+      - @images.each do |image|
+        .image
+          %img{ src: image.url}
