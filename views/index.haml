@@ -8,7 +8,7 @@
     #container
       #search
         %form{name: "search", action: "/", method: "get"}
-          %input{type: "text", name: "term", placeholder: "search for something"}
+          %input{type: "text", name: "term", value: params[:term], placeholder: "search for something"}
           %input.button{type: "submit", value: "search"}
 
       - @images.each do |image|
