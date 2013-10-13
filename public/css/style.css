@@ -11,14 +11,27 @@ img{
 }
 
 input[type="text"]{
-  padding: 4px 10px;
+  padding: 8px 10px;
   font-size: 16px;
   width:100%;
+  margin-bottom: 10px;
 }
 
-input[type="submit"]{
-  width:100%;
+.button {
   display: block;
+  width: 100%;
+  border: 0;
+  background-color: #D74B4B;
+  color: #FFF;
+  font-size: 16px;
+  padding: 8px;
+  border-bottom: 3px solid #AD3A3A;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #DB5A5A;
 }
 
 body{
