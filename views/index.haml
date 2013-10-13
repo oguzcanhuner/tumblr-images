@@ -1,1 +1,15 @@
-index.haml
+%html
+  %head
+    %script{src: "/javascripts/jquery.min.js"}
+    %script{src: "/javascripts/main.js"}
+    %link{rel: "stylesheet", href: "/css/style.css"}
+
+  %body
+    #container
+      #search
+        %form{name: "search", action: "/", method: "get"}
+          %input{type: "text", name: "term", placeholder: "search for something"}
+          %input{type: "submit", value: "search"}
+
+      - @images.each do |image|
+        %img{ src: image.url}

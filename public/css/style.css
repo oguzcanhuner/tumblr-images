@@ -1,7 +1,24 @@
 img{
-  float: left;
-  width: 250px;
+  width: 100%;
   margin-bottom: 10px;
+  display: block;
+}
+
+#container{
+  width: 98%;
+  max-width: 450px;
+  margin: auto;
+}
+
+input[type="text"]{
+  padding: 4px 10px;
+  font-size: 16px;
+  width:100%;
+}
+
+input[type="submit"]{
+  width:100%;
+  display: block;
 }
 
 body{
