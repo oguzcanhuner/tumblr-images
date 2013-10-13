@@ -5,10 +5,15 @@
     %link{rel: "stylesheet", href: "/css/style.css"}
 
   %body
+    %h1.heading
+      search for images from tumblr
+    %h2.subheading
+      a small hack by 
+      %a{href: "http://twitter.com/oguzcanhuner"} @oguzcanhuner
     #container
       #search
         %form{name: "search", action: "/", method: "get"}
-          %input{type: "text", name: "term", value: params[:term], placeholder: "search for something"}
+          %input{type: "text", name: "term", value: params[:term], placeholder: "e.g. cat gifs"}
           %input.button{type: "submit", value: "search"}
 
       - @images.each do |image|
