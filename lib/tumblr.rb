@@ -28,6 +28,7 @@ class Tumblr
   end
 
   def add_post(post_data)
-    posts << Post.new(post_data)
+    post = Post.new(post_data)
+    posts << post if post.photo?
   end
 end
